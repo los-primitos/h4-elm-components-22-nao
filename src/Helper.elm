@@ -1,11 +1,12 @@
 module Helper exposing (..)
 
-import Html 
-import Html.Attributes 
+import Html
+import Html.Attributes
 
 
 
 -- 1
+
 
 joinWords : String -> String -> String
 joinWords word1 word2 =
@@ -13,8 +14,8 @@ joinWords word1 word2 =
 
 
 
-
 -- 2
+
 
 isUpperChars : List Char -> List Bool
 isUpperChars list =
@@ -22,8 +23,8 @@ isUpperChars list =
 
 
 
-
 -- 3
+
 
 evalChars : List Char -> (Char -> Bool) -> List Bool
 evalChars list funTrans =
@@ -31,8 +32,8 @@ evalChars list funTrans =
 
 
 
-
 -- 4
+
 
 headers : String -> Html.Html msg
 headers param =
@@ -48,6 +49,7 @@ headers param =
 
 
 -- 5
+
 
 hyperlink : String -> String -> Html.Html msg
 hyperlink url textLink =
